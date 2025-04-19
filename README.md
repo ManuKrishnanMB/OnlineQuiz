@@ -1,2 +1,2 @@
 # OnlineQuiz
-The Project that was done as a assignment using HTML, Java, CSS etc
+The Project that was done as a assignment using HTML, Java, CSS 
