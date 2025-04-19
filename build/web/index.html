@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Press Start 2P', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      border: 2px solid #fff;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    input[type="submit"] {
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #fff;
+      font-size: 14px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-family: 'Press Start 2P', cursive;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h2>Enter Your Name to Begin</h2>
+  <form action="LoginServlet" method="post">
+    <input type="text" name="username" placeholder="Your Name" required>
+    <input type="submit" value="Start Quiz">
+  </form>
+</body>
+</html>

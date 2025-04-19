@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <title>Result</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      color: yellow;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #score {
+      font-size: 50px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Quiz Result</h2>
+    <div id="score">Your score: 0</div>
+  </div>
+
+  <script>
+    fetch("ResultServlet")
+      .then(res => res.text())
+      .then(data => document.getElementById("score").innerText = "Your score: " + data);
+  </script>
+</body>
+</html>
+
